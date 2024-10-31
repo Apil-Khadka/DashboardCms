@@ -149,8 +149,7 @@ export async function fetchInvoiceById(id: string) {
         invoices.amount,
         invoices.status
       FROM invoices
-      WHERE invoices.id = ${id};
- p  `;
+      WHERE invoices.id = ${id};  `;
 
     const invoice = data.rows.map((invoice) => ({
       ...invoice,
